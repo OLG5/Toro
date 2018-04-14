@@ -1168,7 +1168,7 @@ int64_t GetProofOfStakeReward(int nHeight, int64_t nCoinAge, int64_t nFees)
 {
 
     int64_t nSubsidy = STATIC_POS_REWARD;
-    int lastDigit = pindexBest->nHeight % 10;
+    int lastDigit = nHeight % 10;
     int64_t nSuperBlockReward = 1 * COIN;
 
 
