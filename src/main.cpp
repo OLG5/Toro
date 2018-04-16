@@ -1189,9 +1189,9 @@ int64_t GetProofOfStakeReward(int nHeight, int64_t nCoinAge, int64_t nFees)
     else
     {
         nSubsidy = STATIC_POS_REWARD;
-        if (lastDigit == 1) // PlatinumSuperBlock
+        if (lastDigit == 2) // PlatinumSuperBlock
                 nSuperBlockReward = 20 * COIN;
-            else if (lastDigit == 5 || lastDigit == 8) // SUPERBLOCK
+            else if (lastDigit == 6 || lastDigit == 9) // SUPERBLOCK
                 nSuperBlockReward = 17 * COIN;
 
     }
